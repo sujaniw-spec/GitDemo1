@@ -37,11 +37,11 @@ public class LetterRepeat {
 			}
 		}
 		//-----------------------------
-		System.out.println("second");
+		System.out.println("Forth");
 						
 		String str = "My name is Krishna".toLowerCase();	
 		
-		char [] charArray = str.toCharArray();
+		/*char [] charArray = str.toCharArray();
 		Map<Character, Integer> map = new HashMap<>();
 		char e = ' ';
 		for(int i=0; i<charArray.length; i++) {
@@ -53,8 +53,22 @@ public class LetterRepeat {
 		
 		for(Map.Entry<Character, Integer> entry : map.entrySet()) {
 			System.out.println(entry.getKey() +" "+ entry.getValue());
+		}*/
+		
+		char [] charArray = str.toCharArray();
+		
+		Map <Character, Integer> map = new HashMap<>();
+		char letter1=' ';
+		for(int i=0; i<charArray.length; i++) {
+			letter1 = charArray[i];
+			if(letter1 != ' ') {
+				map.put(letter1, map.getOrDefault(letter1, 0) +1);
+			}
 		}
 		
+		for(Map.Entry<Character, Integer> entry : map.entrySet()) {
+			System.out.println(entry.getKey() +" * "+ entry.getValue());
+		}
 		
 		/*for(Map.Entry<Character, Integer> entry: getCharSequence(str).entrySet()) {
 			System.out.println(entry.getKey() +" : "+ entry.getValue());
