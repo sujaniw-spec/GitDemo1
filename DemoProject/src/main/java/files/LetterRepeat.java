@@ -24,6 +24,8 @@ public class LetterRepeat {
 			}
 			
 		}
+		//-----------------------------
+		System.out.println("second");
 						
 		String str = "My name is Krishna".toLowerCase();	
 		
