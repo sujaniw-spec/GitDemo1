@@ -10,7 +10,7 @@ public class LetterRepeat {
 		// TODO Auto-generated method stub
 
 		String word = "a7b8c9";
-		char letter =' ';
+		/*char letter =' ';
 		int digit=0;
 		for(int i=0; i<word.length(); i++) {
 			letter = word.charAt(i);
@@ -23,6 +23,18 @@ public class LetterRepeat {
 				System.out.println();
 			}
 			
+		}*/
+		char letter=' ';
+		int digit =0;
+		for(int i=0; i<word.length(); i++) {
+			letter= word.charAt(i);
+			if(Character.isAlphabetic(letter) && Character.isDigit(word.charAt(i+1))) {
+				digit = Character.getNumericValue(word.charAt(i+1));
+				for(int j=0; j< digit; j++) {
+					System.out.print(letter);
+				}
+				System.out.println();
+			}
 		}
 		//-----------------------------
 		System.out.println("second");
