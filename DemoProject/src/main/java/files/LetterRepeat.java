@@ -41,7 +41,7 @@ public class LetterRepeat {
 		System.out.println("six");
 						
 		String str = "My name is Krishna".toUpperCase();
-		
+		System.out.println("Seven");
 		/*char [] charArray = str.toCharArray();
 		Map<Character, Integer> map = new HashMap<>();
 		char e = ' ';
